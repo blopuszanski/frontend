@@ -252,4 +252,22 @@ HTML color picker CSS - decimal and hexadecimal color systems
 Hexadecimal color system #000000 - black, #0000FF blue
 Hexadecimal color system shorter form #000 - black, #00F - data-blue
 <p style="color: hsl(0, 0% , 0%)">black #hsl</p> 
-variable currentcolor uses actual color set
+attribute currentcolor uses actual color set
+
+<!-- CSS units -->
+units recommended for websites
+px - pixels
+em - unit relative to parent
+rem - unit relative to html selector
+% - procent
+16 px default value for font in browser
+
+units recommended for printing:
+.cm { font-size: 1cm; }
+.mm { font-size: 5mm; }
+.in { font-size: 0.6in; }
+.pt { font-size: 10pt; }
+.pc { font-size: 10pc; }
+
+ul ul { font-size: 1em; } it defines each nested list has font size in 100%
+pseudoclass :root in CSS allows to refer main element in practice it is 'html' selector
