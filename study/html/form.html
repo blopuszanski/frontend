@@ -7,23 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h4>Formularze:</h4>
+    <h4>Forms:</h4>
 
     <form action="login.php" method="post">
         <fieldset>
-            <legend>Logowanie</legend>
+            <legend>Sign in</legend>
             <p>
-                <label>Wpisz użytkownika:
+                <label>Username:
                     <input type="text" name="user_name" id="username" required placeholder="">
                 
                 </label>
             </p>
             <p>
-                <label for="password">Wpisz hasło:</label>
+                <label for="password">Password:</label>
                 <input type="password" name="password" id="password" required>
             </p>
             <p>
-                <button type="submit">Zaloguj</button>
+                <button type="submit">Sign in</button>
                 <button type="reset">Reset</button>
             </p>
     </fieldset>
@@ -31,10 +31,10 @@
 
     <form action="register.asp" method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend>Rejestracja</legend>
+            <legend>Sing up</legend>
             <input type="hidden" value="dsagdsgdsgs" name="hidden_value">
             <p>
-                <label>Wpisz użytkownika:
+                <label>Username:
                     <input minlength="5" maxlength="30" type="text" name="user_name" id="username" required placeholder="">
                 
                 </label>
@@ -46,35 +46,35 @@
                 </label>
             </p>
             <p>
-                <label for="password">Wpisz hasło:</label>
+                <label for="password">Password:</label>
                 <input type="password" name="password" id="password" required>
             </p>
             <p>
-                <label for="password2">Wpisz hasło ponownie:</label>
+                <label for="password2">Repeat password:</label>
                 <input type="password2" name="password2" id="password" required>
             </p>
             <p>
-                <label for="age">Wiek:</label>
+                <label for="age">Age:</label>
                 <input type="number" name="age" id="age" min="14" max="140" required>
             </p>
             <p>
-                <label for="description">Opis użytkownika</label><br>
+                <label for="description">User description</label><br>
                 <textarea name="description" id="description" cols="30" rows="10"></textarea>
             </p>
             <p>
-                <label for="avatarimg">Wybierz avatar:</label>
+                <label for="avatarimg">Avatar:</label>
                 <input type="file" name="avatar" id="avatarimg" accept="image/png, image/jpeg">
             </p>
-                Ulubiony kolor:
+                Favourite color:
                 <input type="radio" name="color" value="red" id="red">
-                <label for="red">Czerwony</label>
+                <label for="red">Red</label>
                 <input type="radio" name="color" value="green" id="green">
-                <label for="green">Zielony</label>
+                <label for="green">Green</label>
                 <input type="radio" name="color" value="blue" id="blue">
-                <label for="blue">Niebieski</label>
+                <label for="blue">Blue</label>
             </p>
             <p>
-                Ulubiona marka:
+                Favourite car:
                 <input type="checkbox" name="brand" value="dodge" id="dodge">
                 <label for="dodge">Dodge</label>
                 <input type="checkbox" name="brand" value="pontiac" id="pontiac">
@@ -83,34 +83,34 @@
                 <label for="gmc">GMC</label>
             </p>
             <p>
-                <label for="datetime">Data zakupu auta:</label>
+                <label for="datetime">Purchase date:</label>
                 <input id="datetime" name="datetime" type="datetime-local">
             </p>
             <p>
-                <label for="carcolor">Kolor auta:</label>
+                <label for="carcolor">Car color:</label>
                 <input type="color" name="carcolor" id="carcolor">
             </p>
             <p>
-                <label for="tel">Telefon:</label>
+                <label for="tel">Telephone:</label>
                 <input type="tel" name="telephone" id="tel">
             </p>
             <p>
-                <label for="distance">Przebieg w tyś km:</label>
+                <label for="distance">Mileage on kilometres:</label>
                 <input type="range" name="distance" id="distance" min="1" max="100" step="1">
             </p>
             <p>
-                <label for="url">Strona aukcji/komisu:</label>
+                <label for="url">Auction or consignment website:</label>
                 <input type="url" name="urladdress" id="url">
             </p>
             <p>
-                <label for="theme">Templatka Formularze:</label>
+                <label for="theme">Form template:</label>
                 <select name="theme" id="theme">
-                    <option value="white">biały</option>
-                    <option value="dark">ciemny</option>
+                    <option value="white">white</option>
+                    <option value="dark">dark</option>
                 </select>
             </p>
             <p>
-                <button type="submit">Zaloguj</button>
+                <button type="submit">Sign in</button>
                 <button type="reset">Reset</button>
             </p>
         </fieldset>
