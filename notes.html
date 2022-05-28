@@ -1,0 +1,252 @@
+<!-- HTML main tags -->
+
+<head> </head> tag where we put settings, css styles and js scripts
+<body> </body> tag with page content
+
+<!-- HTML Linear tags -->
+
+<b> </b> bold
+<i> </i> italic
+
+<!-- HTML Block tags -->
+
+<h1> </h1> header
+<p> </p> paragraph
+<div> </div> container which divides text
+<hr> horizontal line
+<ol> </ol> ordered list with element numbers
+<ul> </ul> unordered list
+<li> </li> list item 
+<dl> </dl> description list
+<dt> </dt> description term
+<dd> </dd> description details
+<table> </table> table <!-- emmet: table>tr*2>td*3 -->
+<tr> </tr> table raw
+<td> </td> table datacell 
+<thead> </thead> table header
+<tfoot> </tfoot> table foot
+<tbody> </tbody> table body
+<caption> </caption> table signature
+<th> </th> table header cell
+<colgroup> </colgroup> column group
+<col> columns style defined
+
+<!-- HTML Attributes -->
+
+<li type="(1,I,i,a,A)"> </li>
+<td rowspan="(number)"> </td>
+<td colspan="(number)"> </td>
+<col span="(number)" style="css">
+<img src="(photo)" alt="(description)" title="(text for pop_up)">
+<img src="" data-gallery="" data-gallery-description=""> <!-- data-* gives us possibility to create user attribute -->
+<input type="" value="" disabled="">
+
+<!-- HTML Classes, id's, hyperlinks and resources -->
+
+<div id="" data-gallery-name=""> </div> <!-- id's are defined by dot #id in css -->
+<img class="" src=""> <!-- classes are defined by dot .class in css -->
+<a href="address http://example.com"> </a> <!-- absolute link -->
+<a href="address with slash /example.html "> </a> <!-- relative link -->
+<a href="#chapter1"> Chapter 1</a> <!-- anchor to table of contents -->
+<a href="tel:xxxxxxxxx"> </a> <!-- allows to choose number by link -->
+<a href="mailto: xxxxxxxx@example.com"> </a> <!-- allows to choose mail by link -->
+<a href="#"> Empty link</a> <!-- useful while page building -->
+<a href="#" onclick="javascript:alert('You welcome') return false;"> </a> <!-- code turns java script -->
+<script src="js/file.js"> </script> <!-- code turns java script from the external file, tag is located below 'body' section -->
+<link rel="stylesheet" type="text/css" href="example.css"> <!-- code turns css styles from the external file, tag is located below 'head' section -->
+<link rel="icon" href="/example.png" type="image/png"> <!-- code introduces icon from the external file in relative path, tag is located below 'head' section -->
+
+<!-- HTML Structure tags called as semantic -->
+
+<header> </header> <!-- header with navigation -->
+<nav> </nav> <!-- navigation for example main menu -->
+<article> </article> <!-- complete and authonomic content -->
+<aside> </aside> <!-- content based on advertisement, category, widget, sidebar etc. -->
+<footer> </footer> <!-- page footer -->
+<section> </section> <!-- section groups content with specified meaning -->
+<div> </div> <!-- general container without semantic meaning -->
+<main> </main> <!-- tag represents main part of 'body' content, one 'main' is allowed -->
+
+<!-- HTML Multimedia -->
+
+<img src="car.jpg" alt="photo" title="popup description" width="100" height="100" >
+<img src="link" width="100" height="100">
+<a href="link"><img src="car.jpg"> </a> <!-- clicked on the photo will redirect to path from the link -->
+<figure> </figure> <!-- description below the picture used with tag 'figcaption' -->
+<picture> </picture> <!-- responsive picture according to device screen size -->
+<source media="(min-width:1100px)" srcset="large_image.jpg"> <!-- browser will use when screen has more than 1100 px -->
+<video controls>
+    <source type="video/mp4" src="link"> <!-- added video file from the path -->
+</video>
+
+<!-- HTML Forms -->
+
+<form action="login.php" method="POST"></form> <!-- create new form -->
+<label for="description"></label> <!-- add mark which description a raw -->
+<input type="text" name="user_name" id="username"> <!-- add new raw inside the form -->
+<input type="radio" name="color" value="" id=""> <!-- add new raw with single choose option inside the form -->
+<input type="checkbox" name="" value="" id=""> <!-- add new raw with multi choose option inside the form -->
+<input type="datetime-local" name="datetime" id="datetime"> <!-- add option to choose date with time -->
+<input type="tel" name="telephone" id="tel"> <!-- add new raw with telephone -->
+<input type="range" name="distance" id="distance"> <!-- add new raw with slider -->
+<select name="theme" id="theme"></select> <!-- add new raw with selector -->
+    <option value=""></option>
+    <option value=""></option>
+<button type="submit"></button> <!-- add button inside the form-->
+<textarea name="description" id="description" cols="30" rows="10"></textarea> <!-- add textarea inside the form -->
+
+<!-- CSS -->
+
+<link rel="stylesheet" type="text/css" href="theme.css"> <!-- separate css file added to document -->
+<style> </style> <!-- nested tag inside html document in the head section -->
+<p style="color: red;">Lorem ipsum dolor sit amet.</p> <!-- direct assignment but not recommended! -->
+<span id="info" class="alert">Lorem, ipsum.</span> <!-- cascade with few styles (id and class) -->
+
+<!-- CSS Selectors -->
+
+    h4 { font-weight: bold;} <!-- selectors are assigned into html tags elements -->
+<div id="introduction">Lorem ipsum dolor sit amet.</div> 
+<p id="content">Lorem ipsum dolor sit amet.</p>
+<p id="ending">Lorem ipsum dolor sit amet.</p> <!-- selectors with specified id are assinged to div and p tags-->
+<h4 class="chapter-title">Page title</h4>
+<div class="chapter">Lorem ipsum dolor sit amet.</div>
+<p class="chapter">Lorem ipsum dolor sit amet.</p> <!-- classes, many classes may assign to the tag, last class in the styles is the winner -->
+    .comment#comment-best 
+<article id="comment-best" class="comment">Lorem ipsum dolor sit amet.</article> <!-- .class#id can be assing to the same element -->
+    ul ol {background-color: red;} <!-- descendant selector -->
+    section > article {background-color: #e0e0e0;}
+    article > header {color: green; font-weight: bold;} <!-- child selector A > B , directed descendats -->
+    h2 + p {color: red;} <!-- selector A + B assigned to the next neighbour element behind h2 -->
+    h2 ~ p {color: red;} <!-- selector A ~ B assigned to the all elements behind h2 -->
+    * {border: 2px solid black;} <!-- universal selector * which selects all element on the website, slower and rare in use -->
+    section, p, h2, section + div <!-- many selectors can be separated by comma , -->
+    /* */ <!-- comments in css --> 
+
+<!-- CSS Attribute selectors -->
+
+    [data-red] {background-color: red;}
+<div data-red></div> <!-- attribute assigned to the specified element as selector which tag must change -->
+    div[data-blue="blue"] {background-color: lightblue};}
+<div data-blue="blue">Lorem ipsum dolor sit amet.</div> <!-- if value blue in CSS is comply with value in the html tag then must change -->
+    div[class*="foo"] {background-color: red;}
+<div class="foo1234"></div> <!-- if value foo occurs in html attribute no matter where then must change -->
+    div[class~="medium-text"] {background-color: red;}
+<div class="color-dark medium-text grey-border"></div> <!-- if value occurs in html attribute separated by spaces then must change -->
+    [class^="foo"] {background-color: red;}
+<div class="foo1234567"></div> <!-- if value occurs in html attribute and whole string starts with it then must change -->
+    [class$="dark"] {background-color: red;}
+<div class="foo-dark"></div> <!-- if value occurs in html attribute and whole string end with it then must change -->
+    [class|="PL"] {background-color: red;}
+<div class="PL"></div> 
+<div class="PL-pl"></div> <!-- if value occurs in html attribute and whole string starts or ends (but - is needed) with it then must change -->
+    [class="foo-bar" i] {background-color: red;} <!-- 'i' in the attribute defines high of letters do not matter -->
+<p class="Foo-Bar"></p> and <p class="foO-BAR"></p> <!-- both works due to 'i' in the attribute-->
+
+<!-- CSS Pseudoclasses -->
+    a:hover {color: red} <!-- pseudoclass shows when mouse coursor puts on the element -->
+    a:active {color: purple} <!-- pseudoclass shows clicked element -->
+    a:visited {color: green} <!-- pseudoclass shows opened/checked element earlier -->
+<li><a href="#">Strona główna</a></li> <!-- pseudaclass assigned to 'a' selector -->
+    input[type="checkbox"]:checked {box-shadow: 0 0 0 3px orange} <!-- pseudoclass shows when element was marked by user in the form -->
+    input[type="checkbox"]:checked + label {font-weight: bold} <!-- pseudoclass shows when element was marked by user in the form + changed label near -->
+    input[type="text"]:disabled {backgrond-color: lightgrey} <!-- pseudoclass shows not active form element marked on greey colour -->
+    p:first-child {color: red} <!-- pseudoclass changes the first paragraph from the list of many paragraphs, other do not change -->
+    p:last-child {color: red} <!-- pseudoclass changes the last paragraph from the list of many paragraphs, other do not change -->
+    tr:nth-child(even) {background-color: lightgreen;} <!-- pseudoclass changes only even (parzyste) raws in the table -->
+    tr:nth-child(odd) {background-color: white;} <!-- pseudoclass changes only odd (nieparzyste) raws in the table -->
+    li:nth-child(3) {color: red;} <!-- pseudoclass changes only 3rd element in the list -->
+    li:nth-child(3n) {color: red;} <!-- pseudoclass changes every 3rd element in the list -->
+    .red:focus {color: darkred;} <!-- pseudoclass changes only element chosen by user with using keyboard or mouse like active form element when is writing something -->
+    input:not(.red) {backgroud: lightskyblue;} <!-- pseudoclass changes only elements which do not fulfil requirements -->
+
+<!-- CSS Pseudoelements -->
+
+    p:first-letter {font-size: 25px;} <!-- pseudoelement changes first letter in the paragraph -->
+    div:first-line {font-weight: bold;} <!-- pseudoelement changes first line in the paragraph -->
+    ::selection {color: darkred;} <!-- pseudoelement changes display of marked text by the user -->
+    ::before {content: "BEFORE"} <!-- pseudoelement adds additional text before a particular element -->
+    ul {list-style-type: none;} li::before {content:"mark";} <!-- dots in the list are going to be deleted then pseudoelement before adds other mark for example unicode -->
+    .popular-link::after {content: "HOT!";} <!-- the same operating participle like pseudoelement before but with meaning after element -->
+
+<!-- CSS Cascade -->
+
+Rules:
+1. stylesheets origin for example, default browser settings, pages defined by author
+- Default browser settings have a low priority so they will be overwritten by the next style added by the author.
+- Author styles have always more priority than browser settings (user agent stylesheets)
+2. selector specifity, define their order relative to each other, which  considered as the first
+- user agent stylesheets (browser, the lowest priority) 
+- author styles granted by webdeveloper (website, more priority than user agent stylesheets)
+- important author style (website, declarations with anotation more priority than author styles)
+- important user style (website, user clicked on options and change letters height or night mode, the most priority)
+3. order source in stylesheets 
+
+if two regules css have the same importance then the last regule wins for example 'green':
+h1 {color: red;} 
+h1 {color: green;}
+
+adnotation '!important' means it is has more priority regule so should win but do not abuse this declarations
+h1 {color: red !important;}
+
+
+Selectors specifity:
+- tag selectors have the lowest priority like:
+p{ color: green; }
+- classes, pseudoclasses, attributes selectors have more priority by tag selectors like:
+.info { color: silver; }    .container{}    [type="text"]{}     :hover{}
+- identifiers have more priority that above:
+#paragraph { color: brown; }    #intro{}    #wrapper{}
+- the most higher priority have inline styles like:
+<p id="paragraph" class="info" style="color:aqua"></p> 
+but "!important" declaration may overwritten style inline as more important
+
+How calculate specifity (cascade value):
+p { color: silver; } /* 0 0 0 1 */
+p span { color: lightblue; } /* 0 0 0 2 */
+article > section p span {color: green; } /* 0 0 0 4 */ wins
+
+.small-text:first-child { color: lightblue; } /* 0 0 2 0 */
+.box .small-text[data-dolor="red"] { color: red;} /* 0 0 3 0 */ wins
+.small-text { color: green; } /* 0 0 1 0 */
+
+body p span { color: brown; } /* 0 0 0 3 */
+.small-text { color: silver; } /* 0 0 1 0 */ wins
+
+body p span:first-child { color: brown; } /* 0 0 1 3 */
+span.small-text[data-color] { color: silver; } /* 0 0 2 1 */ wins
+
+p #word /* 0 1 0 1 */
+#paragraph #word /* 0 2 0 0 */ wins
+span.small-text[data-color] /* 0 0 2 1 */
+<span id="word" data-color="red" class="small-text"></span>
+
+<!-- CSS Inheritance -->
+
+article {color: red;} -> 'p' and 'h1' inside the article will receive this style as childs
+cascade is always more important that inheritance
+not all styles may be inheritance, check in the browser
+word 'inherit' added to the style forces to make inheritance like:
+a { color: blue; }
+header { color: green; }
+header a { color: inherit; } wins (color green)
+
+word 'initial' added to the style forces to use browser default settings
+a { color: blue; }
+header { color: green; }
+header a { color: initial; } wins (color black)
+
+<!-- CSS Colors -->
+Named basic colors in CSS described in W3C table of contents, quantity 140
+<p style="color: rgb(0, 0, 0)"></p> black color
+<p style="color: rgb(255, 255, 255)"></p> white color
+<p style="color: rgb(255, 0, 0)"></p> red color
+<p style="color: rgb(0, 255, 0)"></p> green color
+<p style="color: rgb(0, 0, 255)"></p> blue color
+<p style="color: rgb(128, 128, 128)"></p> grey color
+<p style="color: rgb(255, 165, 0)"></p> orange color
+RGB described in W3C table of contents
+HTML color picker CSS - decimal and hexadecimal color systems
+<p style="color: rgba(0, 0, 0.5)"></p> black rgba with transparent half visibility
+<p style="color: rgba(0, 0, 0.1)"></p> black rgba with transparent less visibility
+<p style="color: rgba(0, 0, 1)"></p> black rgba with transparent full visibility
+Hexadecimal color system #FFFFFF - white, #000000 - black, #0000FF blue
