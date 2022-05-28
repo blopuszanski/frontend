@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album zdjęć</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row; /* column */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-box {
+            margin: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .image-box:hover {
+            transform: scale(1.07);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/01/02/04/37/animal-6909429__340.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2020/02/11/12/05/livigno-4839351__340.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2021/11/16/18/10/nature-6801719__480.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2021/12/13/21/43/drummer-6869168__340.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2021/12/19/20/43/clouds-6881917__340.jpg" alt="">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2020/06/07/02/16/fantasy-5268744__340.jpg" alt="">
+            <div>Test</div>
+        </div>
+    
+</body>
+</html>
