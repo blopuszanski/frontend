@@ -15,13 +15,17 @@
         h1 { font-size: 1.5rem; }
         body { font-size: 14px; }
         .italic { font-style: italic; }
+        .red { color: red; border width: 3px; border-style: dotted; }
+        .small { font-variant: small-caps; }
+        .font1 { font: italic bold 18px/32px Arial, Helvetica; }
     </style>
 </head>
 <body>
     <h1>Header</h1>
     <p class="italic serif">Lorem ipsum dolor sit amet.</p>
-    <p class="sans-serif">Lorem ipsum dolor sit amet.</p>
-    <p class="monospace">Lorem ipsum dolor sit amet.</p>
-    <p class="roboto">Lorem ipsum dolor sit amet.</p>
+    <p class="sans-serif bold">Lorem ipsum dolor sit amet.</p>
+    <p class="monospace">Lorem <span class="small">ipsum dolor sit amet</span>.</p>
+    <p class="roboto red">Lorem ipsum dolor sit amet.</p>
+    <p class="font1">Lorem ipsum dolor sit amet.</p>
 </body>
 </html>
