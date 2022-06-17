@@ -472,3 +472,28 @@ Space around an element to separate it from other site parts, margin and padding
     }
 </style>
 <div>Lorem ipsum dolor sit amet.</div>
+
+<!-- Border -->
+
+Space between an element and margin, border may has styles defined like color, kind of line etc. 
+
+<style>
+    div {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 30px
+        border: 15px solid #FFD700;
+        border-style: solid; /* it defines how border should look like */
+    }
+    .dotted { border-style: dotted; }
+    .dashed {border-style: dashed; }
+    .thin { border-width: thin; } /* thin border thickness */
+    .medium { border-width: medium; } /* medium border thickness */
+    .thick { border-width: thick; } /* thick border thickness */
+    .mixed { 
+        border-width: thin thick medium 10px; /* border: thin upper edge, thick right edge, medium lower edge, 10px left edge */
+        border-color: red #00FF00 gray orange; /* border: red upper edge, green right edge, gray lower edge, orange left edge */
+        border-radius: 10px; /* border with radius on the each corner */
+    } 
+</style>
