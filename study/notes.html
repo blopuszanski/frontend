@@ -328,3 +328,105 @@ reduced record with fonts
     .font2 { font: normal Helvetica; }
     .font3 { font: small-caps bold 16px/30px Georgia, serif; }
 </style>
+
+<!-- Text-transform -->
+
+text-transform changes letter height, inherited
+
+<style>
+    .uppercase { text-transform: uppercase; }
+    .capitalize { text-transform: capitalize; }
+    .lowercase { text-transform: lowercase; }
+</style>
+
+<p>Text with normal font</p>
+<p class="uppercase">Text with high letters</p>
+<p class="capitalize">Text with high letters on the first position in the words</p>
+<p class="lowercase">Text with low letters</p>
+
+text-decoration changes text by added additional decotions
+
+<style>
+    .underline { 
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: red;
+        }
+    .overline { text-decoration: overline; }
+    .line-through { text-decoration: line-through; }
+</style>
+
+<p>Text with normal font</p>
+<p class="underline">Text underlined with dots</p>
+<p class="overline">Text with overline</p>
+<p class="line-through">Text line-through</p>
+
+text-align gives specified text alignment like to the left, right, center or justification
+
+<style>
+    p { border: 2px solid black; }
+    .align-left { text-align: left; }
+    .align-right { text-align: right; }
+    .align-center { text-align: center; }
+    .align-justify { text-align: justify; }
+</style>
+
+line height, inherited value
+
+<style>
+    p {
+        line-height: 22px;
+        font-size: 16px;
+        border: 2px solid black;
+    }
+    p.1h1_2 { line-height: 1.2; } /* 16px * 1.2 = 19.2 px */
+    p.1h150 { line-height: 150%; } /* 16px * 1.5 = 24px */
+    p.1h2em { line-height: 2em; } /* 16px * 2 = 32px */
+</style>
+
+vertical-align, text alignment in the vertical direction with refer to the parent
+
+<style>
+    .baseline { vertical-align: baseline; } /* default value */
+    .sub { vertical-align: sub; } /* lower index */
+    .sup { vertical-align: super; } /* higher index */
+</style>
+
+text-indent, indentation for first raw in the paragraph, inherited
+
+<style>
+    p { text-align: justify; }
+    .indent30px { text-indent: 30px; }
+    .indent40proc { text-indent: 40%; }
+    .indent4em { text-indent: 4em; }
+    .indent-10px { text-indent: -10px; }
+</style>
+
+word-spaceing, distance between words, inherited
+
+<style>
+    .ws-02 { word-spacing: -0.2em; }
+    .ws-normal { word-spacing: normal; } /* normal = 0.25em */
+    .ws2em { word-spacing: 2em; }
+</style>
+
+letter-spacing, distance between letters, inherited
+
+<style>
+    .ls-05 { letter-spacing: -0.1em; }
+    .ls-normal { letter-spacing: normal; } /* normal means no additional space */
+    .ls05em { letter-spacing: 0.5em; }
+</style>
+
+text-shadow defines shadow in the horizontal, vertical, transparent level
+
+<style>
+    .ts22green {
+        text-shadow: 2px 2px #00FF00; }
+    .ts2-3red {
+        text-shadow: 2px -3px #FF0000; }
+    .ts11 {
+        text-shadow: 1px 1px; }
+    .ts235blue {
+        text-shadow: 2px 3px 5px #0000FF; }
+</style>
