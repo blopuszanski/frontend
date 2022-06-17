@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p { border: 2px solid black; padding: 10px; margin: 30px; }
+        .uppercase { text-transform: uppercase; }
+        .capitalize { text-transform: capitalize; }
+        .lowercase { text-transform: lowercase; }
+        .underline { 
+            text-decoration: underline; 
+            text-decoration-style: dotted;
+            text-decoration-color: orange;
+        }
+        .overline { text-decoration: overline; }
+        .line-through { text-decoration: line-through; }
+        .align-right { text-align: right; }
+        .align-center { text-align: center; }
+        .justify { text-align: justify; }
+        .lh34 { line-height: 180%; }
+        .sub { vertical-align: sub; }
+        .sup { vertical-align: super; }
+        .indent { text-indent: 3em; }
+        .ws2em { word-spacing: 2em; }
+        .ls { letter-spacing: .2em; }
+        .shadow1 { text-shadow: 2px 3px 1px red; }
+        .shadow2 { text-shadow: 3px 2px; }
+        .margin50 { margin: 50px; }
+    </style>
+</head>
+<body>
+    <p class="align-right ls shadow2"><sub>Lorem</sub> ipsum <span class="underline uppercase">dolor sit amet</span> consectetur.</p>
+    <p class="align-center shadow1 margin50"><sup>Lorem</sup> ipsum <span class="capitalize overline">dolor sit amet</span> <span class="sup">consectetur</span>.</p>
+    <p class="justify lh34 indent">Lorem <span class="sub">ipsum</span> <span class="lowercase line-through ws2em">DOLOor Sit amet</span> consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, hic.</p>
+</body>
+</html>
