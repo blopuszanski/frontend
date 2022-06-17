@@ -430,3 +430,23 @@ text-shadow defines shadow in the horizontal, vertical, transparent level
     .ts235blue {
         text-shadow: 2px 3px 5px #0000FF; }
 </style>
+
+<!-- Text-column -->
+
+<style>
+    .multi-column2{
+        -moz-column-count: 2; /* 'moz' - firefox */
+        -webkit-column-count: 2; /* webkit - chrome, safari, new opera, ios */
+        column-count: 2;
+        /* prefix 'o' - old opera, prefix 'ms' - internet explorer or microsoft edge */
+    }
+    .multi-column{
+        -moz-column-width: 70px;
+        -webkit-column-width: 70px;
+        column-width: 70px;
+        column-gap: 40px; 
+        column-rule: 2px solid grey; /* column separator */
+    }
+</style>
+<p class="multi-column2">Lorem ipsum dolor sit amet consectetur.</p>
+<p class="multi-column">Lorem ipsum dolor sit amet consectetur.</p>
