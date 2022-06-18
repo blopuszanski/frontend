@@ -31,5 +31,16 @@ body {
 
 #navbar ul li a {
     margin-left: 3px;
-    
+    color: black;
+    opacity: 0.7; /* transparent */
+    font-size: 1.2rem;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    text-decoration: none; /* no underline */
+}
+
+#navbar ul li a:hover {
+    color: lightgreen;
+    opacity: 1;
+    text-decoration: underline;
+    transition: all 0.15s; /* defines time which is needed to change color after invade nav button */
 }
