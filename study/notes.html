@@ -523,3 +523,22 @@ Element outline similar to the border but above border, does not take a space an
         outline-width: 30px;
     }
 </style>
+
+<!-- Box-sizing -->
+
+<style>
+    div {
+        width: 200px;
+        height: 130px;
+        padding: 15px;
+        border: 10px solid white;
+        box-sizing: content-box; /* box dimensions are increased by padding and border values */
+        box-sizing: border-box; /* box dimensions are unchanged no matter if padding or border exist */ 
+        overflow: hidden; /* when content is too big according to box size then part of the content is hidden */
+        overflow: scroll; /* when content is too big according to box size then it may scroll in the box with a possiblity to show */
+        overflow: wrap; /* when content is too big according to box size then content is wrapped */
+        min-height: 130px; /* when content is too small according to box size then box does not fit size to the content and remains define size */
+        max-height: 130px; /*when content is too big according to box size then box does not fit size to the content and remains define size */
+    }
+</style>
+
