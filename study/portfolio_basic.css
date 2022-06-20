@@ -92,3 +92,71 @@ div.my-information {
     font-size: 1.5rem;
     text-align: left;
 }
+
+#skills-section {
+    background-color: black;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* it wraps elements which do not fit in the horizontal to the next raw */
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+.skill-information {
+    padding: 2rem;
+    text-align: center;
+}
+
+.skill-name {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.skill-information progress {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.skill-information progress::-webkit-progress-value {
+    background-color: white;
+    border-radius: 0;
+}
+
+.skill-information progress::-webkit-progress-bar {
+    background-color: black;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-container .image-box {
+    margin: 5px;
+}
+
+.image-box a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#contact-section {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contact-section a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
