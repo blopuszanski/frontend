@@ -550,4 +550,36 @@ Element outline similar to the border but above border, does not take a space an
     }
 </style>
 
+<!-- Float -->
 
+Float allows to create site layout by remove element on the left or right side.
+It may use for pictures and videos.
+
+<style>
+    .clearfix::after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    .to-left {
+        float: left;
+    }
+    .to-right {
+        float: right;
+    }
+    .both {
+        float: both;
+    }
+    .none {
+        float: none;
+    }
+    img {
+        margin: 5px;
+    }    
+</style>
+<section class="clearfix">
+    <div>Element 1</div>
+    <div>Element 2</div>
+    <div>Element 3</div>
+</section>
