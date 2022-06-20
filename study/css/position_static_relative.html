@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            position: static;
+            left: 100px; /* ignored */
+        }
+        .box {
+            position: relative;
+            bottom: 100px;
+            left: 50px;
+            width: 200px;
+            height: 100px;
+            background: lightgray;
+            border: 2px solid black;
+            z-index: 2; /* higher value dedicates which element overshadow another */
+        }
+        .box2 {
+            background-color: green;
+            left: 15%;
+            bottom: 150px;
+            z-index: 1; /* higher value dedicates which element overshadow another */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, commodi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, commodi!</p>
+    <div class="box">
+        div <br>
+        div
+    </div>
+    <div class="box box2">
+        div <br>
+        div
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ducimus illo, velit dignissimos rerum molestiae ex vel. Libero consectetur harum quis! Ipsam eligendi harum magni debitis voluptate fugit illo unde nemo explicabo recusandae ipsum suscipit qui nostrum quis nobis enim ea adipisci quod inventore exercitationem alias sint, earum ullam aliquid! Natus veniam odio inventore, laboriosam quis optio, quos nulla animi tempore ipsa amet numquam ut commodi dolores porro distinctio corrupti. Nulla earum asperiores reprehenderit distinctio harum commodi magnam dicta eligendi animi illo facere ea id molestiae, error sunt ipsa. Eos iste laboriosam quasi praesentium aperiam deserunt, ducimus dolor? Cumque fugiat non expedita inventore quaerat eveniet harum libero totam eligendi mollitia id odio, quisquam saepe voluptatibus, cupiditate vel officiis culpa incidunt omnis laudantium optio nostrum error? Recusandae asperiores incidunt accusamus? Ratione alias labore sit beatae qui dolores voluptas modi voluptate non, voluptates sunt itaque ad iusto explicabo quasi. Mollitia delectus officia consectetur quod non. Saepe quos reprehenderit velit corporis? Nobis fuga dolore omnis, ratione tempora illo ipsa in sint nostrum totam ipsum voluptas perferendis rerum? Amet facere omnis alias dolores nisi dolorem, provident tenetur natus, ad velit officiis nobis, nihil suscipit vero nesciunt? Est asperiores hic tenetur, unde quod blanditiis quas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatum!</p>
+</body>
+</html>
