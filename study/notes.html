@@ -584,12 +584,16 @@ It may use for pictures and videos.
     <div>Element 3</div>
 </section>
 
-<!-- Static and relative positioning -->
+<!-- Static, relative and absolute positioning -->
+
+Absolute positions itself regard to element with another status than static as his parent.
+Absolute takes so much space as needed and dimensions may define without height & width.
 
 <style>
     .box {
         /* position: static;  default setting */
         position: relative; /* it allows to shift element according to the position where it has in the document */
+        position: absolute; /* content does not seen this element and overshadow, absolute has default position like in static mode */
         width: 200px;
         left: 150px;
         top: 100px;
