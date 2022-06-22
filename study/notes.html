@@ -601,3 +601,25 @@ Absolute takes so much space as needed and dimensions may define without height 
         padding: 10px;
     }
 </style>
+
+<!-- Theory -->
+
+1. What is a doctype?
+Doctype is obligatory instruction for the browser about html document version.
+It informs the browser how to render this file, it is not a tag, not require to close, marks size do not matter.
+Without these information the browser must guess what is a version and it ends with show page in the 'quirks mode'.
+'Quirks mode' helps with interpretation of pages made for the old browsers.
+
+In html5 we use a doctype:
+<!DOCTYPE html>
+
+In old versions html4 and xhtml they needed an additional references to DTD document
+
+HTML 4.01:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+XHTML 1.1:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtmlll/DTD/xhtmlll.dtd">
+
+2. What are data-* attributes?
+
